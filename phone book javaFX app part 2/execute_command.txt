@@ -1,0 +1,1 @@
+java --module-path ${PATH_TO_FX_LIB_ON_YOUR_COMPUTER} --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics -jar HW6_197_Yahya_Yanal.jar

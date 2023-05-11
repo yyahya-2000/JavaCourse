@@ -1,0 +1,2 @@
+java --module-path ${PATH_TO_FX_LIB_ON_YOUR_COMPUTER} --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics -jar Server.jar
+java --module-path ${PATH_TO_FX_LIB_ON_YOUR_COMPUTER} --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics -jar Client.jar

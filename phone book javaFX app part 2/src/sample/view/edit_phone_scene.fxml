@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="512.0" style="-fx-background-color: #3D4956;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.EditPhoneController">
+   <children>
+      <VBox layoutX="15.0" layoutY="123.0" prefHeight="386.0" prefWidth="152.0" spacing="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="123.0">
+         <children>
+            <Label prefHeight="36.0" prefWidth="180.0" text="FirstName:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="36.0" prefWidth="180.0" text="LastName:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="36.0" prefWidth="180.0" text="Patronymic:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="36.0" prefWidth="180.0" text="Mobile Phone:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="36.0" prefWidth="180.0" text="Home Phone:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="36.0" prefWidth="180.0" text="Address:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="36.0" prefWidth="180.0" text="Birthday:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="36.0" prefWidth="180.0" text="Comment:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="178.0" layoutY="123.0" prefHeight="405.0" prefWidth="319.0" spacing="10.0" AnchorPane.leftAnchor="178.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="123.0">
+         <children>
+            <TextField id="FirstNameEditField" fx:id="firstNameEditField" prefHeight="34.0" prefWidth="267.0" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </TextField>
+            <TextField id="SecondNameEditField" fx:id="secondNameEditField" prefHeight="34.0" prefWidth="319.0" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </TextField>
+            <TextField id="PtronymicEditField" fx:id="patronymicEditField" prefHeight="34.0" prefWidth="319.0" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </TextField>
+            <TextField id="MobilePhoneEditField" fx:id="mobilePhoneEditField" prefHeight="34.0" prefWidth="319.0" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </TextField>
+            <TextField id="HomePhoneEditField" fx:id="homePhoneEditField" prefHeight="34.0" prefWidth="319.0" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </TextField>
+            <TextField id="AddressEditField" fx:id="addressEditField" prefHeight="34.0" prefWidth="319.0" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </TextField>
+            <DatePicker id="BirthdayEditField" fx:id="birthdayEditField" prefHeight="33.0" prefWidth="319.0" />
+            <TextField id="CommentEditField" fx:id="commentEditField" alignment="TOP_LEFT" prefHeight="71.0" prefWidth="319.0" style="-fx-background-radius: 10px;">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <ButtonBar layoutX="315.0" layoutY="470.0" prefHeight="40.0" prefWidth="175.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="17.0">
+        <buttons>
+          <Button id="CancelEditButton" fx:id="cancelEditBtn" lineSpacing="10.0" mnemonicParsing="false" onAction="#cancelEditBtnAction" style="-fx-background-color: #D35400; -fx-background-radius: 10px;" text="Cancel">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button id="SaveEditButton" fx:id="saveEditBtn" mnemonicParsing="false" onAction="#saveEditBtnAction" style="-fx-background-color: #D35400; -fx-background-radius: 10px;" text="Save">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+      <ImageView fitHeight="62.0" fitWidth="66.0" layoutX="223.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="475.0" AnchorPane.leftAnchor="223.0" AnchorPane.rightAnchor="227.0" AnchorPane.topAnchor="56.0">
+         <image>
+            <Image url="@../res/edit_contact.png" />
+         </image>
+      </ImageView>
+      <Pane layoutY="53.0" prefHeight="7.0" prefWidth="356.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <AnchorPane prefHeight="54.0" prefWidth="512.0" style="-fx-background-color: #D35400;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="81.0" layoutY="15.0" text="Edit Contact" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="80.0">
+               <font>
+                  <Font name="Times New Roman" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

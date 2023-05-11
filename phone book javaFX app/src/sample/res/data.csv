@@ -1,0 +1,7 @@
+lastName;firstName;patronymic;mobilePhone;homePhone;address;birthday;comment;
+lastName0;firstName0;;7-888-888-8800;7-888-888-8880;address0;1880-1-1;
+lastName1;firstName1;patronymic1;7-888-888-8801;7-888-888-8881;address1;1881-1-1;comment1
+lastName2;firstName2;patronymic2;;7-888-888-8882;address2;1882-1-1;comment2
+lastName3;firstName3;patronymic3;7-888-888-8803;7-888-888-8883;address3;;
+lastName4;firstName4;patronymic4;7-888-888-8804;7-888-888-8884;address4;1884-1-1;comment4
+lastName5;firstName5;;7-888-888-8805;;;;

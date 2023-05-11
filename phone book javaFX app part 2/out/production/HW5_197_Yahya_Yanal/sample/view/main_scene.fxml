@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="747.0" style="-fx-background-color: #3D4956;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
+   <children>
+      <MenuBar id="Menu" fx:id="menuBar" layoutY="2.0" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #D35400;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu id="FileM" fx:id="fileMenu" mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem id="AddPhoneNumberM" fx:id="addPhoneMenuItem" mnemonicParsing="false" onAction="#addPhoneRegister" text="Add Contact" />
+                  <MenuItem id="EditPhoneNumberM" fx:id="editPhoneMenuItem" mnemonicParsing="false" onAction="#editPhoneRegister" text="Edit Contact" />
+                  <MenuItem id="DeletePhoneNumberM" fx:id="deleteMenuItem" mnemonicParsing="false" onAction="#deleteRegisterAction" text="Delete Contact" />
+              <MenuItem id="ExitM" fx:id="exitMenuItem" mnemonicParsing="false" onAction="#exit" text="Exit" />
+            </items>
+          </Menu>
+          <Menu id="SittingM" fx:id="sittingMenu" mnemonicParsing="false" text="Sitting">
+            <items>
+              <MenuItem id="ExportM" fx:id="exportMenuItem" mnemonicParsing="false" onAction="#exportPhones" text="Export" />
+                  <MenuItem id="ImportM" fx:id="importMenuItem" mnemonicParsing="false" onAction="#importPhones" text="Import" />
+            </items>
+          </Menu>
+          <Menu id="HelpM" fx:id="helpMenu" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem id="AboutM" fx:id="aboutMenuItem" mnemonicParsing="false" onAction="#showAboutWindow" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="tableView" layoutX="-1.0" layoutY="66.0" prefHeight="397.0" prefWidth="665.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="66.0">
+        <columns>
+            <TableColumn fx:id="iDCol" prefWidth="37.0" text="ID" />
+          <TableColumn id="LastNameC" fx:id="lastNameCol" prefWidth="86.0" text="LastName" />
+          <TableColumn id="FirstNameC" fx:id="firstNameCol" prefWidth="78.0" text="FirstName" />
+            <TableColumn id="PatronymicC" fx:id="patronymicCol" prefWidth="76.0" text="Patronymic" />
+            <TableColumn id="HomePhoneC" fx:id="homePhoneCol" prefWidth="96.0" text="Home phone" />
+            <TableColumn fx:id="mobilePhoneCol" prefWidth="94.0" text="Mobile Phone" />
+            <TableColumn id="AddressC" fx:id="addressCol" prefWidth="64.0" text="Address" />
+            <TableColumn id="BirthdayC" fx:id="birthdayCol" prefWidth="87.0" text="Birthday" />
+            <TableColumn id="CommentC" fx:id="CommentCol" prefWidth="131.0" text="Comment" />
+        </columns>
+      </TableView>
+      <HBox layoutX="1.0" layoutY="26.0" prefHeight="25.0" prefWidth="542.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="113.0" AnchorPane.topAnchor="35.0">
+         <children>
+            <TextField id="SearchLastNameField" fx:id="searchLastnameField" prefHeight="22.0" prefWidth="125.0" promptText="Search by lastname" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </TextField>
+            <TextField id="SearchFirstNameField" fx:id="searchFirstnameField" prefHeight="22.0" prefWidth="118.0" promptText="Search by firstname" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </TextField>
+            <TextField id="SearchHomePhoneField" fx:id="SearchHomePhoneField" prefHeight="22.0" prefWidth="138.0" promptText="Search by home phone" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </TextField>
+            <TextField id="SearchMobilePhoneField" fx:id="searchMobilePhoneField" prefHeight="22.0" prefWidth="138.0" promptText="Search by mobile phone" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <Button id="SearchMeanButton" fx:id="searchbtn" layoutX="562.0" layoutY="35.0" mnemonicParsing="false" onAction="#searchBtnAction" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #D35400; -fx-background-radius: 15px;" text="Search" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ButtonBar layoutX="-7.0" layoutY="451.0" prefHeight="36.0" prefWidth="665.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="7.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#deleteRegisterAction" style="-fx-background-color: #D35400; -fx-background-radius: 15px;" text="Delete">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#editPhoneRegister" style="-fx-background-color: #D35400; -fx-background-radius: 15px;" text="Edite">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#addPhoneRegister" prefHeight="28.0" prefWidth="369.0" style="-fx-background-color: #D35400; -fx-background-radius: 15px;" text="Add">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+      <Pane layoutY="24.0" prefHeight="4.0" prefWidth="665.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>
